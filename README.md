@@ -11,11 +11,10 @@ by McVicker et al and convert them into .bed files on hg19
 coordinates. It also includes a Julia script that is used in this
 process.
 
-# B statistic
-
 File `bkgd.tar.gz` was downloaded from `http://www.phrap.org`. It's in
 hg18 coordinates. This contains estimates of B, which measures effect
-of background selection, and was published by McVicker et al 2009.
+of background selection, and was published by McVicker et
+al 2009. It's not included in the repo.
 
 It unpacks using `tar zxvf bkgd.tar.gz` into directory bkgd. For
 further details, see `bkgd/README.md`.
