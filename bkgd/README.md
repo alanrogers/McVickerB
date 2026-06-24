@@ -3,7 +3,7 @@
 After unpacking the gzipped tar archive `../bkgd.tar.gz`, the current
 directory contains files with names like `chr1.bkgd`, `chr2.bkgd`, and
 so on. These are not saved in the repo. In addition, there is a
-`README` file (not to be confused with the curren file, `README.md`),
+`README` file (not to be confused with the current file, `README.md`),
 which explains how McVicker et al created these files in 2008.
 
 # Constructing B-hg18.bed.gz
