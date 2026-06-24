@@ -8,6 +8,16 @@ which explains how McVicker et al created these files in 2008.
 
 # Constructing B-hg18.bed.gz
 
+To make a .bed file from the downloaded .bkgd files, the command below
+uses a Julia script `mkbed.jl`. This requires access not only to the
+.bkgd files in the current directory, but also to files in .agp
+format, which specify the base positions that are included in the hg18
+assembly of the human reference genome. The Julia script assumes that
+these files are in directory `~/data/hg18/agp`. If they're in a
+different directory on your machine, you'll have to edit the Julia
+code. Scripts for downloading the .agp files can be found at
+`github.com:alanrogers/hg18.git`. 
+
     julia mkbed.jl | gzip -c > B-hg18.bed.gz
 
 This creates `B-hg18.bed.gz`, which is a gzipped .bed file associating
